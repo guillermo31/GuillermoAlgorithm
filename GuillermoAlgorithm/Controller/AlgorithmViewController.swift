@@ -66,9 +66,7 @@ public class AlgorithmViewController: UIViewController
     {
         let outlineStyle : NSMutableParagraphStyle = NSMutableParagraphStyle()
         outlineStyle.alignment = .left
-        outlineStyle.defaultTabInterval = 15
-        outlineStyle.firstLineHeadIndent = 20
-        outlineStyle.headIndent = 35
+        outlineStyle.paragraphSpacing = 10
         
         return outlineStyle
         

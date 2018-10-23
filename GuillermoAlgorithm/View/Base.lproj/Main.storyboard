@@ -18,13 +18,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XSI-Cr-g9n">
-                                <rect key="frame" x="45" y="359" width="299" height="234"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zch-s1-d1R">
-                                <rect key="frame" x="45" y="74" width="259" height="207"/>
+                                <rect key="frame" x="45" y="74" width="259" height="369"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="207" id="FIi-Cg-rUe"/>
+                                    <constraint firstAttribute="height" constant="369" id="WPB-o4-4ZU"/>
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="Label">
@@ -36,16 +33,19 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XSI-Cr-g9n">
+                                <rect key="frame" x="45" y="476" width="299" height="124"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XSI-Cr-g9n" secondAttribute="trailing" constant="31" id="3Qh-Rx-FO7"/>
-                            <constraint firstItem="zch-s1-d1R" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="FXJ-YK-Brw"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zch-s1-d1R" secondAttribute="trailing" constant="71" id="Pzy-09-OCO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XSI-Cr-g9n" secondAttribute="bottom" constant="74" id="Sdd-z8-CLn"/>
-                            <constraint firstItem="XSI-Cr-g9n" firstAttribute="top" secondItem="zch-s1-d1R" secondAttribute="bottom" constant="78" id="Vza-lo-a7j"/>
-                            <constraint firstItem="zch-s1-d1R" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="54" id="Xqo-FV-wNI"/>
-                            <constraint firstItem="XSI-Cr-g9n" firstAttribute="leading" secondItem="zch-s1-d1R" secondAttribute="leading" id="ori-2L-RXk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XSI-Cr-g9n" secondAttribute="trailing" constant="31" id="HgW-cq-9Ga"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zch-s1-d1R" secondAttribute="trailing" constant="71" id="PVQ-MA-kMt"/>
+                            <constraint firstItem="XSI-Cr-g9n" firstAttribute="top" secondItem="zch-s1-d1R" secondAttribute="bottom" constant="33" id="RB1-mj-AxR"/>
+                            <constraint firstItem="zch-s1-d1R" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="54" id="XBb-MX-lay"/>
+                            <constraint firstItem="zch-s1-d1R" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="bFs-i1-LZ1"/>
+                            <constraint firstItem="XSI-Cr-g9n" firstAttribute="leading" secondItem="zch-s1-d1R" secondAttribute="leading" id="ggJ-Ey-NfW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XSI-Cr-g9n" secondAttribute="bottom" constant="67" id="jTi-DO-qj1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

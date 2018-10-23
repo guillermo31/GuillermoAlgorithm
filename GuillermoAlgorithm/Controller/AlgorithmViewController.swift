@@ -42,12 +42,15 @@ public class AlgorithmViewController: UIViewController
         //list of steps
         let algorithm = [stepOne, stepTwo, stepThree, stepFour, stepFive, stepSix]
         
+        let attributesDictionary = [NSAttributedStringKey.font : algorithmLabel.font]
+        let fullAttributedString = NSMutableAttributedString(string: title, attributes: attributesDictionary)
+        
         // loops through each step's string to format it
         for step in algorithm
         {
             let code : String = "💻"
-            let formattedStep: String = "\n\(bullet) \(step)"
-            let attributedStringStep = : NSMutableAttributedString = NSMutableAttributedString(string: formattedStep)
+            let formattedStep: String = "\n\(code) \(step)"
+            let attributedStringStep : NSMutableAttributedString = NSMutableAttributedString(string: formattedStep)
             let outlineStyle = createOutlineStyle()
             
             attributedStringStep.addAttributes([NSAttributedStringKey.paragraphStyle : outlineStyle], range: NSMakeRange(0, attributedStringStep.length))
@@ -55,7 +58,7 @@ public class AlgorithmViewController: UIViewController
             fullAttributedString.append(attributedStringStep)
         }
         
-        algorithmText.attributedText = fullAttributedString
+        algorithmLabel.attributedText = fullAttributedString
     }
     
     private func createOutlineStyle() -> NSParagraphStyle

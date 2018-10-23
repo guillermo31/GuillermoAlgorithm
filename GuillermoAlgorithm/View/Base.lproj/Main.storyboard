@@ -10,29 +10,43 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Algorithm View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GuillermoAlgorithm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AlgorithmViewController" customModule="GuillermoAlgorithm" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zch-s1-d1R">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zch-s1-d1R">
                                 <rect key="frame" x="31" y="310" width="313" height="284"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XSI-Cr-g9n">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XSI-Cr-g9n">
                                 <rect key="frame" x="31" y="52" width="313" height="234"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="234" id="5nk-LU-saU"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XSI-Cr-g9n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3S2-Fb-8qL"/>
+                            <constraint firstItem="zch-s1-d1R" firstAttribute="top" secondItem="XSI-Cr-g9n" secondAttribute="bottom" constant="24" id="3rD-ix-vFK"/>
+                            <constraint firstItem="XSI-Cr-g9n" firstAttribute="leading" secondItem="zch-s1-d1R" secondAttribute="leading" id="BLS-tI-ugq"/>
+                            <constraint firstItem="XSI-Cr-g9n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="PMl-ci-vm8"/>
+                            <constraint firstItem="XSI-Cr-g9n" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="Wqs-qU-rDO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zch-s1-d1R" secondAttribute="bottom" constant="73" id="m4i-Hc-TCg"/>
+                            <constraint firstItem="XSI-Cr-g9n" firstAttribute="trailing" secondItem="zch-s1-d1R" secondAttribute="trailing" id="yEb-md-YoU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="algorithmImage" destination="XSI-Cr-g9n" id="NtW-tW-0ww"/>
+                        <outlet property="algorithmLabel" destination="zch-s1-d1R" id="wxh-44-TQm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F9828233217F5F50004C8539 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9828232217F5F50004C8539 /* AppDelegate.swift */; };
-		F9828235217F5F50004C8539 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9828234217F5F50004C8539 /* ViewController.swift */; };
+		F9828235217F5F50004C8539 /* AlgorithmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9828234217F5F50004C8539 /* AlgorithmViewController.swift */; };
 		F9828238217F5F50004C8539 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9828236217F5F50004C8539 /* Main.storyboard */; };
 		F982823A217F5F52004C8539 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9828239217F5F52004C8539 /* Assets.xcassets */; };
 		F982823D217F5F52004C8539 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F982823B217F5F52004C8539 /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		F982822F217F5F50004C8539 /* GuillermoAlgorithm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuillermoAlgorithm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9828232217F5F50004C8539 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F9828234217F5F50004C8539 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F9828234217F5F50004C8539 /* AlgorithmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmViewController.swift; sourceTree = "<group>"; };
 		F9828237217F5F50004C8539 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F9828239217F5F52004C8539 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F982823C217F5F52004C8539 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 		F9828245217F5F78004C8539 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F9828234217F5F50004C8539 /* ViewController.swift */,
+				F9828234217F5F50004C8539 /* AlgorithmViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -159,7 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9828235217F5F50004C8539 /* ViewController.swift in Sources */,
+				F9828235217F5F50004C8539 /* AlgorithmViewController.swift in Sources */,
 				F9828233217F5F50004C8539 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,7 +305,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = GuillermoAlgorithm/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GuillermoAlgorithm/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,7 +322,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = GuillermoAlgorithm/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GuillermoAlgorithm/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
